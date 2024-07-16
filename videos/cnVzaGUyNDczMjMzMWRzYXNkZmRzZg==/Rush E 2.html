@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RUSH E 2 MIDI VIDEO | OBS VIDEOS</title>
+    <meta name="color-scheme" content="light dark">
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Set a common font */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Use flexbox for layout */
+            height: 100vh; /* Full viewport height */
+        }
+        .sidebar {
+            width: 200px; /* Width of the sidebar */
+            background-color: #333; /* Sidebar background color */
+            color: #fff; /* Text color */
+            padding: 20px;
+            box-sizing: border-box; /* Ensure padding is included in width */
+            display: flex; /* Use flexbox for sidebar content */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            justify-content: space-between; /* Space evenly between items */
+            height: 100vh; /* Full height of the viewport */
+            position: fixed; /* Fixed position to remain visible */
+            left: 0; /* Align to left side */
+            top: 0; /* Align to top of viewport */
+            z-index: 1000; /* Ensure sidebar is above other content */
+        }
+        .sidebar-logo {
+            width: 80px; /* Adjust size as needed */
+            margin-bottom: 10px; /* Space below the logo */
+        }
+        .sidebar-text {
+            text-align: center;
+            margin-bottom: 10px; /* Space below the text */
+        }
+        .sidebar-icon {
+            width: 24px;
+            height: 24px;
+            fill: #fff; /* Fill color for SVG */
+            margin-bottom: 10px; /* Space below the icon */
+        }
+        .settings {
+            margin-top: auto; /* Push settings to bottom */
+            text-align: center; /* Center text */
+        }
+        .color-scheme-chooser {
+            background-color: #666; /* Color scheme chooser background */
+            padding: 10px; /* Padding inside color scheme chooser */
+            margin-top: 10px; /* Space above color scheme chooser */
+        }
+        .color-scheme-label {
+            color: #fff; /* Label text color */
+            margin-bottom: 5px; /* Space below label */
+            display: block; /* Display as block element */
+        }
+        .color-scheme-select {
+            width: 100%; /* Full width */
+            padding: 8px; /* Padding inside select */
+            border: none; /* Remove default border */
+            background-color: #888; /* Select background color */
+            color: #fff; /* Select text color */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+        .video-container {
+            margin-left: 200px; /* Adjust for sidebar width */
+            text-align: center;
+            padding: 20px; /* Add padding for content */
+            width: calc(100% - 200px); /* Adjust for sidebar width */
+            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+        .video-container iframe {
+            border: none;
+            width: 100%; /* Full width of container */
+            height: calc(100vh - 40px); /* Adjust height for padding */
+        }
+        h1, h2 {
+            margin: 0;
+            font-weight: normal; /* Optional: Adjust font weight */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="html/assets/images/home7394/logo.svg" alt="OBS Logo" class="sidebar-logo">
+        <h1 class="sidebar-text">OBS VIDEOS</h1>
+        <h2 class="sidebar-text">RUSH E 2 MIDI VIDEO</h2>
+        <svg class="sidebar-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L0 9l2 2v11h8v-7h4v7h8v-11l2-2-12-7z"/>
+        </svg>
+        <div class="settings">
+            <div class="color-scheme-chooser">
+                <label for="colorScheme" class="color-scheme-label">Choose Color Scheme:</label>
+                <select id="colorScheme" class="color-scheme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <iframe name="myIFrame" src="html/assets/embeds/rushe2-embed-01.html"></iframe>
+    </div>
+</body>
+</html>
